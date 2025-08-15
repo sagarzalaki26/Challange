@@ -1,11 +1,11 @@
 public class sort {
-    public static void sort012(int[] arr) {
+    public static void sort(int[] arr) {
         int low = 0, mid = 0, high = arr.length - 1;
 
         while (mid <= high) {
             switch (arr[mid]) {
                 case 0:
-                    // Swap arr[low] and arr[mid]
+                    
                     int temp0 = arr[low];
                     arr[low] = arr[mid];
                     arr[mid] = temp0;
@@ -18,7 +18,7 @@ public class sort {
                     break;
 
                 case 2:
-                    // Swap arr[mid] and arr[high]
+                 
                     int temp2 = arr[mid];
                     arr[mid] = arr[high];
                     arr[high] = temp2;
@@ -31,9 +31,9 @@ public class sort {
     public static void main(String[] args) {
         int[] arr = {0, 1, 2, 1, 0, 2, 1, 0};
 
-        sort012(arr);
+        sort(arr);
 
-        // Print sorted array
+     
         for (int num : arr) {
             System.out.print(num + " ");
         }
